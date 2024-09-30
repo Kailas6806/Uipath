@@ -99,7 +99,7 @@
       <AssemblyReference>System.Collections.Specialized</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="513.6,828.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="513.6,711.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="Status" />
       <Variable x:TypeArguments="x:String" Name="rapiContent" />
@@ -138,7 +138,6 @@
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[Status]" />
     <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[responseAttachment]" JsonString="[rapiContent]" />
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[responseAttachment(&quot;message&quot;).ToString]" />
-    <uasf:DownloadFileFromUrl Timeout="{x:Null}" ConflictResolution="[UiPath.Activities.System.FileOperations.FileConflictBehavior.Rename]" DisplayName="Download File from URL" FileName="C:\Users\Kailas\Desktop\demo\Responseimg.jpg" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="DownloadFileFromUrl_1" ResponseAttachment="[responseAttachment_1]" Url="[responseAttachment(&quot;message&quot;).ToString]" />
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,108.8" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;demo&quot;]" />
+    <uasf:DownloadFileFromUrl Timeout="{x:Null}" ConflictResolution="[UiPath.Activities.System.FileOperations.FileConflictBehavior.Rename]" DisplayName="Download File from URL" FileName="C:\Users\Kailas\Desktop\demo\Responseimg.jpg" sap:VirtualizedContainerService.HintSize="416,113.6" sap2010:WorkflowViewState.IdRef="DownloadFileFromUrl_1" ResponseAttachment="[responseAttachment_1]" Url="[responseAttachment(&quot;message&quot;).ToString]" />
   </Sequence>
 </Activity>
